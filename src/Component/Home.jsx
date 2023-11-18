@@ -24,6 +24,7 @@ export const Home = () => {
   return (
     <div>
       <div className="calculator">
+     
         <div className="display">
         <input type="text" value={input} placeholder="Calculator" readOnly />
        
@@ -33,6 +34,7 @@ export const Home = () => {
         </div>
 
         <div className="display">
+       
    
         <input type="text" value={result} placeholder="Result" readOnly />
       
@@ -42,14 +44,15 @@ export const Home = () => {
 
 
         <div className="buttons">
+           
           <button onClick={() => handleClick("+")}>+</button>
           <button onClick={() => handleClick("-")}>-</button>
-          <button onClick={() => handleClick("*")}>*</button>
+          <button onClick={() => handleClick("*")}>x</button>
           <button onClick={() => handleClick("/")}>/</button>
           <button onClick={() => handleClick("%")}>%</button>
           <button onClick={() => handleClick("^")}>^</button> 
-          <button onClick={() => handleClick("C")}>C</button>
-          <button onClick={() => handleClick("=")}>=</button>
+          <button onClick={() => handleClick("C")}>AC</button>
+          <button onClick={() => handleClick("()")}>( )</button>
           <button onClick={() => handleClick("9")}>9</button>
           <button onClick={() => handleClick("8")}>8</button>
           <button onClick={() => handleClick("7")}>7</button>
@@ -61,6 +64,8 @@ export const Home = () => {
           <button onClick={() => handleClick("1")}>1</button>
           <button onClick={() => handleClick("0")}>0</button>
           <button onClick={() => handleClick(".")}>.</button>
+          <button onClick={() => handleClick("=")}>=</button>
+          
         </div>
       </div>
     </div>
